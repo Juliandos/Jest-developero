@@ -1,7 +1,15 @@
-test('sum calculator', () => {})
+const calculator = require('.')
 
-test('subtract calculator', () => {})
+test('sum calculator', () => {
+    const result = calculator.sum(1, 2);
+    expect(result).toBe(3);
+})
 
-test('multiply calculator', () => {})
+test('subtract calculator', () => {
+    const result = calculator.subtract(5, 2);
+    expect(result).toBe(3);
+})
 
-test('divide calculator', () => {})
+test.todo('multiply calculator')
+
+test.todo('divide calculator')
